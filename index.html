@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Hello, Wesley</h1>
+
+      <section class="tasks-incomplete">
+        <p>You have 3 tasks to complete</p>
+        <div class="tasks-progress">
+          <div class="progress-value"></div>
+        </div>
+      </section>
+
+      <section class="options-tasks">
+        <button>Option One</button>
+        <button>Option Two</button>
+        <button>Option Three</button>
+      </section>
+
+      <section class="content">
+        <h2>All Tasks</h2>
+
+        <div class="wrapper">
+          <ul>
+            <li>
+              <input type="checkbox" id="todo_1" />
+              <label for="todo_1">
+                <span class="check"></span>
+                Description to do list one
+              </label>
+              <a href="#" class="delete-task">
+                <img src="/icons/delete.svg" alt="Delete">
+              </a>
+            </li>
+            <li>
+              <input type="checkbox" id="todo_2" />
+              <label for="todo_2">
+                <span class="check"></span>
+                Description to do list two
+              </label>
+              <a href="#" class="delete-task">
+                <img src="/icons/delete.svg" alt="Delete">
+              </a>
+            </li>
+          </ul>
+
+          <form class="add-task">
+            <input type="text" name="add-task" placeholder="Add new task" />
+            <button>Add task</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
