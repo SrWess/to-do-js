@@ -17,51 +17,41 @@
       <h1>Hello, Wesley</h1>
 
       <section class="tasks-incomplete">
-        <p>You have 3 tasks to complete</p>
+        <p>You have <strong id="counter">1</strong> tasks to complete</p>
         <div class="tasks-progress">
-          <div class="progress-value"></div>
+          <div id="progress-value"></div>
         </div>
       </section>
 
-      <section class="options-tasks">
+      <!-- <section class="options-tasks">
         <button>Option One</button>
         <button>Option Two</button>
         <button>Option Three</button>
-      </section>
+      </section> -->
 
       <section class="content">
         <h2>All Tasks</h2>
 
         <div class="wrapper">
-          <ul>
+          <ul class="tasks">
             <li>
               <input type="checkbox" id="todo_1" />
               <label for="todo_1">
                 <span class="check"></span>
                 Description to do list one
               </label>
-              <a href="#" class="delete-task">
-                <img src="/icons/delete.svg" alt="Delete">
-              </a>
-            </li>
-            <li>
-              <input type="checkbox" id="todo_2" />
-              <label for="todo_2">
-                <span class="check"></span>
-                Description to do list two
-              </label>
-              <a href="#" class="delete-task">
-                <img src="/icons/delete.svg" alt="Delete">
-              </a>
+              <a href="#" class="delete-task"></a>
             </li>
           </ul>
-
-          <form class="add-task">
-            <input type="text" name="add-task" placeholder="Add new task" />
-            <button>Add task</button>
-          </form>
         </div>
+
+        <form class="add-task">
+          <input type="text" name="add-task" placeholder="Add new task" />
+          <button>Add task</button>
+        </form>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
